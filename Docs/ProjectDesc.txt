@@ -1,0 +1,9 @@
+Title: A Statistical Study of Accretion and Wind Diagnostics in Herbig Stars (1 student)
+
+Supervisor: Rik Claes
+
+This project will investigate how the morphology of accretion and outflow diagnostic spectral lines varies across the Herbig Ae/Be stellar mass range, with the aim of identifying potential transitions in accretion and wind-launching mechanisms. Using high-resolution optical spectra obtained from the ESO Science Archive, a sample of Herbig stars spanning a wide range of effective temperatures and masses will be assembled.
+
+The spectra will be continuum-normalised and corrected for stellar radial velocity. The initial analysis will focus on prominent emission lines that are free from significant photospheric absorption, providing a clean view of the circumstellar accretion and outflow signatures. If time permits, the study will be extended to lines affected by photospheric absorption through spectral modelling and subtraction of the underlying stellar spectrum.
+
+Statistical dimensionality-reduction techniques such as Principal Component Analysis (PCA) or Uniform Manifold Approximation and Projection (UMAP) will be applied to the line profiles to identify the dominant modes of spectral variability across the sample. The resulting components will be examined as a function of stellar effective temperature and mass to search for systematic trends. In particular, the project will investigate whether distinct spectroscopic regimes emerge that may indicate a transition from magnetospheric accretion in lower-mass Herbig stars to boundary-layer accretion at higher masses, changes in wind-launching properties, or whether the observed diversity can be primarily explained by viewing geometry. The results will provide new insight into how accretion and outflow processes evolve across the intermediate-mass pre-main-sequence stellar population
