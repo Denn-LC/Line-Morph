@@ -18,11 +18,18 @@ In principle Herbig stars do not include objects cooler then 7000K (stars with a
 
 Given that Herbig stars are the high mass counterpart of high mass T Tauri  stars, it is well known that T Tauri stars sustain a megnetic field due to their internal dynamo (?) ,  they exhibit bi-polar outflows powered by their accretion.
 
-
-
-
-
 # Unknowns
 
 - internal dynamo
 - zero age main sequence stars
+
+## Data / Sample
+
+- Start with the Herbig star sample from Fairlamb et al. (2014).
+- Look at the samples from Vioque et al. (2019) and Vioque et al. (2022).
+- Check the ESO Science Portal for available X-shooter or UVES spectra for these stars.
+
+## Useful Resources
+
+- NASA ADS - literature search
+- ESO Science Portal - archival spectra
