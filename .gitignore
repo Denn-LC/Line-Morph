@@ -1,0 +1,12 @@
+# huge spectral data
+
+data/raw/
+data/processed/
+
+*.fits
+*.fits.gz
+*.fit
+*.fts
+
+# Python virtual environment
+.venv/
