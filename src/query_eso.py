@@ -17,7 +17,7 @@ def query_star(ra, dec):
 
     # Query ESO object using ra_deg and dec_deg
     # ask rik about ADQL, what the hell
-    query f = """
+    query = f"""
     SELECT
     """
     result = service.search(query)
