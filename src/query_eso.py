@@ -3,7 +3,7 @@ import pyvo
 from astropy.coordinates import SkyCoord
 import astropy.units as u
 
-# Create and connect to ESO tap service
+# connect to ESO tap service
 ESO_TAP_URL = "https://archive.eso.org/tap_obs"
 service = pyvo.dal.TAPService(ESO_TAP_URL)
 
@@ -15,14 +15,14 @@ def query_star(ra, dec):
     ra_deg = coords.ra.deg
     dec_deg = coords.dec.deg
 
-    # Query ESO object using ra_deg and dec_deg
+    # query ESO portal using ra_deg and dec_deg
     # ask rik about ADQL, what the hell
     query = f"""
     SELECT
     """
     result = service.search(query)
 
-    # Convert ESO result into pandas
+    # convert ESO result to pandas
     observations_df = result.to_table().to_pandas()
 
     return observations_df
