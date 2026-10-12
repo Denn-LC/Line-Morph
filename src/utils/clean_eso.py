@@ -10,5 +10,9 @@ def clean_eso(input_name):
     # repiar broken rows
     data = data.replace("truehttp://archive.eso.org/", "true\nhttp://archive.eso.org/")
 
+    # fix broken quotes
+    data = data.replace('"["', '"[""')
+    data = data.replace('"]"', '""]"')
+
     return pd.read_csv(StringIO(data))
 
