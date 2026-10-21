@@ -1,15 +1,8 @@
-from utils.csv_to_eso import csv_to_eso
+from utils.plot_teff import plot_teff
 
-csv_to_eso(
+plot_teff(
     "data/catalogues/vioque/vioque2018_high.csv",
-    "data/catalogues/vioque/vioque2018_high_eso.csv",
-    "RAICRS",
-    "DEICRS"
-)
-
-csv_to_eso(
-    "data/catalogues/vioque/vioque2018_low.csv",
-    "data/catalogues/vioque/vioque2018_low_eso.csv",
-    "RAICRS",
-    "DEICRS"
+    "data/catalogues/vioque/vioque2018_high_eso_export.csv",
+    "Vioque",
+    "VIS"
 )
