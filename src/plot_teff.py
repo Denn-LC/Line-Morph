@@ -17,8 +17,11 @@ nir_names = nir["obj"].str.replace(r"[\s-]", "", regex = True).str.lower()
 observed_stars = stars[star_names.isin(nir_names)]
 
 # plot temperatures and save the figure
-plt.hist(observed_stars["Teff"], bins = 10, edgecolor = "black")
+temperatures = observed_stars["Teff"].dropna()
+
+plt.hist(temperatures, bins = 12, edgecolor = "black")
 plt.xlabel("Temperature (K)")
 plt.ylabel("Number of stars")
+plt.title(f"Fairlamb X-Shooter NIR sample (n = {len(temperatures)})")
 plt.tight_layout()
 plt.savefig("figures/temperature_histogram.png")
