@@ -1,5 +1,15 @@
-from utils.tsv_to_csv import tsv_to_csv
+from utils.csv_to_eso import csv_to_eso
 
-tsv_to_csv("data/catalogues/vioque/vioque2018_high.tsv", "data/catalogues/vioque/vioque2018_high.csv")
+csv_to_eso(
+    "data/catalogues/vioque/vioque2018_high.csv",
+    "data/catalogues/vioque/vioque2018_high_eso.csv",
+    "RAICRS",
+    "DEICRS"
+)
 
-tsv_to_csv("data/catalogues/vioque/vioque2018_low.tsv", "data/catalogues/vioque/vioque2018_low.csv")
+csv_to_eso(
+    "data/catalogues/vioque/vioque2018_low.csv",
+    "data/catalogues/vioque/vioque2018_low_eso.csv",
+    "RAICRS",
+    "DEICRS"
+)
