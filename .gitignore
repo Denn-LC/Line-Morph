@@ -3,6 +3,8 @@
 data/raw/
 data/processed/
 
+.scratch.py
+
 *.fits
 *.fits.gz
 *.fit
