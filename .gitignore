@@ -6,8 +6,6 @@ data/processed/
 # python cache files
 __pycache__/
 *.pyc
-# calling file
-.scratch.py
 
 *.fits
 *.fits.gz
