@@ -3,6 +3,10 @@
 data/raw/
 data/processed/
 
+# python cache files
+__pycache__/
+*.pyc
+# calling file
 .scratch.py
 
 *.fits
@@ -10,5 +14,5 @@ data/processed/
 *.fit
 *.fts
 
-# Python virtual environment
+# python virtual environment
 .venv/
