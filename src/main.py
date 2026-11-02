@@ -1,46 +1,34 @@
 
-import pandas as pd
-from utils.match_stars import match_stars
+from astropy.io import fits
+import matplotlib.pyplot as plt
 
 
 def main():
+    path = "data/spectra/hen3-938/NIR/ADP.2024-02-29T08:05:55.704.fits"
 
-    catalogue_path = "data/catalogues/vioque/vioque_2018.csv"
-    eso_path = "data/catalogues/vioque/vioque_2018_observations.csv"
+    with fits.open(path) as hdul:
+        hdul.info()
 
-    stars = pd.read_csv(catalogue_path)
+        spectrum = hdul[1].data
+        print(spectrum.names)
 
-    observations = match_stars(
-        catalogue_path,
-        eso_path,
-        "RAICRS",
-        "DEICRS",
-        instrument="XSHOOTER"
-    )
+        wavelength = spectrum["WAVE"][0]
+        flux = spectrum["FLUX"][0]
 
-    # Keep only NIR observations
-    nir = observations[
-        observations["obs_title"].str.contains("_NIR_", na=False)
-    ]
+        print("Wavelength range:", wavelength.min(), wavelength.max())
+        print("Wavelength unit:", hdul[1].columns["WAVE"].unit)
+        print("Flux unit:", hdul[1].columns["FLUX"].unit)
 
-    target = nir[nir["Name"].str.strip() == "Hen 3-938"]
+        plt.plot(wavelength, flux, linewidth=0.7)
 
-    print(target.to_string(index=False))
+        plt.xlim(2150, 2180)
+        plt.axvline(2166.1, color="red", linestyle="--", label="Br-gamma rest wavelength")
 
-    # Count observations for each star
-    counts = nir.groupby("Name").size()
-
-    # Add observation counts to the catalogue
-    stars["NIR_count"] = stars["Name"].map(counts).fillna(0).astype(int)
-
-    # Keep stars with NIR observations
-    stars = stars[stars["NIR_count"] > 0]
-
-    # Sort from hottest to coolest
-    stars = stars.sort_values("Teff", ascending=False)
-
-    print(stars[["Name", "Teff", "NIR_count"]].head(20).to_string(index=False))
-
+        plt.xlabel("Wavelength (nm)")
+        plt.ylabel("Flux")
+        plt.title("Hen 3-938: Br-gamma (NIR)")
+        plt.legend()
+        plt.show()
 
 if __name__ == "__main__":
     main()
