@@ -1,41 +1,46 @@
+
+import pandas as pd
 from utils.match_stars import match_stars
 
 
 def main():
+
+    catalogue_path = "data/catalogues/vioque/vioque_2018.csv"
+    eso_path = "data/catalogues/vioque/vioque_2018_observations.csv"
+
+    stars = pd.read_csv(catalogue_path)
+
     observations = match_stars(
-        "data/catalogues/vioque/vioque_2018.csv",
-        "data/catalogues/vioque/vioque_2018_observations.csv",
+        catalogue_path,
+        eso_path,
         "RAICRS",
         "DEICRS",
         instrument="XSHOOTER"
     )
 
-    print("Observations:", len(observations))
-    print("Unique stars:", observations["Name"].nunique())
-    print(observations["separation_arcsec"].describe())
+    # Keep only NIR observations
     nir = observations[
-    observations["obs_title"].str.contains("_NIR_", na=False)
+        observations["obs_title"].str.contains("_NIR_", na=False)
     ]
 
-    print("NIR observations:", len(nir))
-    print("NIR unique stars:", nir["Name"].nunique())
+    target = nir[nir["Name"].str.strip() == "Hen 3-938"]
 
-    print(
-    observations[["Name", "obj", "separation_arcsec"]]
-    .sort_values("separation_arcsec", ascending=False)
-    .head(10)
-    )
+    print(target.to_string(index=False))
 
-    print(
-    observations.groupby("Name")["separation_arcsec"]
-    .min()
-    .describe()
-    )
+    # Count observations for each star
+    counts = nir.groupby("Name").size()
 
-    for radius in [3, 4, 5, 7, 10]:
-        subset = observations[observations["separation_arcsec"] < radius]
+    # Add observation counts to the catalogue
+    stars["NIR_count"] = stars["Name"].map(counts).fillna(0).astype(int)
 
-        print(f"{radius} arcsec: {subset['Name'].nunique()} stars, {len(subset)} observations")
+    # Keep stars with NIR observations
+    stars = stars[stars["NIR_count"] > 0]
+
+    # Sort from hottest to coolest
+    stars = stars.sort_values("Teff", ascending=False)
+
+    print(stars[["Name", "Teff", "NIR_count"]].head(20).to_string(index=False))
+
 
 if __name__ == "__main__":
     main()

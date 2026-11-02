@@ -1,35 +1,45 @@
-import pandas as pd
-import os
-import matplotlib.pyplot as plt
-from utils.clean_eso import clean_eso
 
-def plot_teff(catalogue_path, eso_path, name, arm = "NIR"):
+import pandas as pd
+import matplotlib.pyplot as plt
+from utils.match_stars import match_stars
+
+
+def plot_teff(catalogue_path, eso_path, ra_col, dec_col, name,
+              instrument = "XSHOOTER", arm = "NIR"):
 
     stars = pd.read_csv(catalogue_path)
-    eso_stars = clean_eso(eso_path)
 
-    # get xshooter observations, then keep the near infrared ones
-    xshooter = eso_stars[eso_stars["ins_id"] == "XSHOOTER"]
-    observations = xshooter[xshooter["obs_title"].str.contains(f"_{arm}_", na = False)]
+    # match ESO observations to catalogue stars
+    observations = match_stars(
+        catalogue_path,
+        eso_path,
+        ra_col,
+        dec_col,
+        instrument = instrument
+    )
 
-    # remove all caps, spaces and hypens so names all match
-    star_names = stars["Name"].str.replace(r"[\s-]", "", regex = True).str.lower()
-    eso_names = observations["obj"].str.replace(r"[\s-]", "", regex = True).str.lower()
+    # filter by spectral arm if asked in arg
+    if arm is not None:
+        observations = observations[
+            observations["obs_title"].str.contains(f"_{arm}_", na=False)
+        ]
 
-    # only keep stars in nir region
-    observed_stars = stars[star_names.isin(eso_names)]
+    # get unique observed stars
+    observed_names = observations["Name"].unique()
+    observed_stars = stars[stars["Name"].isin(observed_names)]
 
-    # plot temperatures and save the figure
+    # get temperatures, drop empty
     temperatures = observed_stars["Teff"].dropna()
 
-    print(f"{name}: {len(temperatures)} stars with {arm} observations")
+    print(f"{name}: {len(temperatures)} stars observed with {instrument}, {arm}")
 
-    plt.hist(temperatures, bins = 12, edgecolor = "black")
+    # plot teff
+    plt.hist(temperatures, bins = 12, edgecolor="black")
     plt.xlabel("Temperature (K)")
     plt.ylabel("Number of stars")
-    plt.title(f"{name} X-Shooter {arm} (n = {len(temperatures)})")
+    plt.title(f"{name} {instrument} {arm} (n = {len(temperatures)})")
     plt.tight_layout()
-    # make the folder if it doesnt exist already
-    os.makedirs(f"figures/{name.lower()}", exist_ok=True)
-    plt.savefig(f"figures/{name.lower()}/{name.lower()}_{arm.lower()}_teff.png")
+    plt.savefig(
+        f"figures/{name.lower()}/{name.lower()}_{str(instrument).lower()}_{str(arm).lower()}_teff.png"
+    )
     plt.close()
