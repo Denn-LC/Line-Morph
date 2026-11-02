@@ -14,3 +14,7 @@ __pycache__/
 
 # python virtual environment
 .venv/
+
+# Keep example spectra
+!data/spectra/hen3-938/NIR/*.fits
+!data/spectra/hen3-938/VIS/*.fits
