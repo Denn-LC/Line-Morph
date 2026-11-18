@@ -1,0 +1,44 @@
+[
+  {
+    "purposes": ["SCIENCE"],
+    "name": "/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/molecfit_model_1/2026-11-18T17:36:40.451/ATM_PARAMETERS.fits",
+    "checksum": "BC8DDB2C53BB7AD275F1A91DE57B97AE",
+    "category": "ATM_PARAMETERS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": ["SCIENCE"],
+    "name": "/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/molecfit_model_1/2026-11-18T17:36:40.451/BEST_FIT_PARAMETERS.fits",
+    "checksum": "keI3ldF2kdF2kdF2",
+    "category": "BEST_FIT_PARAMETERS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": ["SCIENCE"],
+    "name": "/home/denn/Software/ESO/reinstall/install/calib/molecfit-4.4.4/XSHOOTER_NIR_mapping_atmospheric.fits",
+    "checksum": "EAF87852A4762CB8E3F0E26472F9BC98",
+    "category": "MAPPING_ATMOSPHERIC",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": ["SCIENCE"],
+    "name": "/home/denn/Software/ESO/reinstall/install/calib/molecfit-4.4.4/XSHOOTER_NIR_mapping_convolve.fits",
+    "checksum": "C15B69B93FE9D3B8F1F6556853B51C65",
+    "category": "MAPPING_CONVOLVE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": ["SCIENCE"],
+    "name": "/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/molecfit_model_1/2026-11-18T17:36:40.451/MODEL_MOLECULES.fits",
+    "checksum": "1E673E636C65012E41B91F4430455119",
+    "category": "MODEL_MOLECULES",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": ["SCIENCE"],
+    "name": "/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/propagate_keys_calctrans/2026-11-18T17:58:46.310/ADP.2024-02-26T08:39:17.616.fits",
+    "checksum": "DMamELXkDLakDLUk",
+    "category": "SCIENCE",
+    "class": "org.eso.domain.FitsFile"
+  }
+]

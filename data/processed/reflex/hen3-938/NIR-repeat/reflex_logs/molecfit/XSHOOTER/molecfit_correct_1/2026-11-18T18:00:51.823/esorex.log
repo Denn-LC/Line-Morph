@@ -1,0 +1,74 @@
+
+Start time     : 2026-11-18T18:00:51
+Program name   : esorex
+Severity level : [ INFO  ] 
+
+18:00:51 [ INFO  ] : [tid=000] This is EsoRex, version 3.14b
+18:00:51 [ INFO  ] : [tid=000] using the libraries: CPL = 7.4, CFITSIO = 4.6.2, WCSLIB = 8.4, FFTW (normal precision) = 3.3.10-sse2, FFTW (single precision) = 3.3.10-sse2, OPENMP = 202111
+18:00:51 [ INFO  ] : [tid=000] Invocation command line was: esorex --suppress-prefix=TRUE --output-dir=/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/molecfit_correct_1/2026-11-18T18:00:51.823 --log-dir=/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_logs/molecfit/XSHOOTER/molecfit_correct_1/2026-11-18T18:00:51.823 --recipe-config=/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_book_keeping/molecfit/XSHOOTER/molecfit_correct_1/2026-11-18T18:00:51.823/molecfit_correct.rc --products-sof=products_sof.json molecfit_correct /home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_book_keeping/molecfit/XSHOOTER/molecfit_correct_1/2026-11-18T18:00:51.823/data.sof
+18:00:51 [ INFO  ] molecfit_correct: [tid=000] Check frameset (SOF tags) ...
+18:00:51 [ INFO  ] molecfit_config_mappingchk: [tid=000] Validating any declared mappings to TELLURIC_CORR ...
+18:00:51 [ INFO  ] molecfit_config_mappingchk: [tid=000] 	Found frame TELLURIC_CORR with 1 extension
+18:00:51 [ INFO  ] molecfit_config_mappingchk: [tid=000] 	Checking that the MAPPING_CORRECT parameter declares a valid  mapping to TELLURIC_CORR:
+18:00:51 [ INFO  ] molecfit_config_mappingchk: [tid=000] 	Checking that the numbers match.
+18:00:51 [ INFO  ] molecfit_config_mappingchk: [tid=000] 		Checking that there are the same no of non primary mappings as there are extensions in SCIENCE
+18:00:51 [ INFO  ] molecfit_config_mappingchk: [tid=000] 		Found target_frame SCIENCE with 1 extensions.   ... Numbers match.
+18:00:51 [ INFO  ] molecfit_correct: [tid=000] Load 'molecfit_correct' recipe parameters ...
+18:00:51 [ INFO  ] molecfit_config_table_mapping: [tid=000] Column[TELLURIC_CORR_EXT] : Mapping input extension[0] to {0}
+18:00:51 [ INFO  ] molecfit_config_table_mapping: [tid=000] Column[TELLURIC_CORR_EXT] : Mapping input extension[1] to {1}
+18:00:51 [ INFO  ] molecfit_config_table_mapping: [tid=000] cpl_table *mappingtab loaded :
+18:00:51 [ INFO  ] molecfit_correct_parameters: [tid=000] Load TELLURIC_CORR from molecfit_calctrans(...)
+18:00:51 [ INFO  ] molecfit_load_table: [tid=000] Tag = TELLURIC_DATA, File = /home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/molecfit_calctrans_1/2026-11-18T17:58:47.342/TELLURIC_DATA.fits : Loaded 'cpl_table *' in extension 1 ...
+18:00:51 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/molecfit_calctrans_1/2026-11-18T17:58:47.342/TELLURIC_CORR.fits] - Check FITS file format ... (Searching first extension with data)
+18:00:51 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/molecfit_calctrans_1/2026-11-18T17:58:47.342/TELLURIC_CORR.fits] - Load  header in the extension[0]
+18:00:51 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/molecfit_calctrans_1/2026-11-18T17:58:47.342/TELLURIC_CORR.fits] - Check data   in the extension[0] : KEYWORD[NAXIS] = 0
+18:00:51 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/molecfit_calctrans_1/2026-11-18T17:58:47.342/TELLURIC_CORR.fits] - Load  header in the extension[1]
+18:00:51 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/molecfit_calctrans_1/2026-11-18T17:58:47.342/TELLURIC_CORR.fits] - Check data   in the extension[1] : KEYWORD[NAXIS] = 1
+18:00:51 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/molecfit_calctrans_1/2026-11-18T17:58:47.342/TELLURIC_CORR.fits] - Check           in the extension[1]: KEYWORD[XTENSION] = IMAGE
+18:00:51 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/molecfit_calctrans_1/2026-11-18T17:58:47.342/TELLURIC_CORR.fits] - Found format = IMAGE(1D)!
+18:00:51 [ INFO  ] molecfit_fits_load_verbose: [tid=000] File[/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/molecfit_calctrans_1/2026-11-18T17:58:47.342/TELLURIC_CORR.fits] - Loading FITS header/data ... (all extensions)
+18:00:51 [ INFO  ] molecfit_fits_load_verbose: [tid=000] Loaded cpl_propertylist file: /home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/molecfit_calctrans_1/2026-11-18T17:58:47.342/TELLURIC_CORR.fits (extension=0) --> [HEADER   ]
+18:00:51 [ INFO  ] molecfit_fits_load_verbose: [tid=000] Loaded cpl_propertylist file: /home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/molecfit_calctrans_1/2026-11-18T17:58:47.342/TELLURIC_CORR.fits (extension=1) --> [HEADER   ]
+18:00:51 [ INFO  ] molecfit_fits_load_verbose: [tid=000] Loaded cpl_vector       file: /home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/molecfit_calctrans_1/2026-11-18T17:58:47.342/TELLURIC_CORR.fits (extension=1) --> [IMAGE(1D)]
+18:00:51 [ INFO  ] molecfit_correct_parameters: [tid=000] WLC_REF VALUE ->DATA 
+18:00:51 [ INFO  ] molecfit_correct_parameters: [tid=000] WLC_REF VALUE  AFTER UPDATING->DATA 
+18:00:51 [ INFO  ] molecfit_correct: [tid=000]  wlc_ref parameter:- DATA 
+18:00:51 [ INFO  ] molecfit_correct: [tid=000] CORRECT input SCIENCE_CALCTRANS/SCIENCE files 
+18:00:51 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/propagate_keys_correct/2026-11-18T18:00:51.148/ADP.2024-02-26T08:39:17.616.fits] - Check FITS file format ... (Searching first extension with data)
+18:00:51 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/propagate_keys_correct/2026-11-18T18:00:51.148/ADP.2024-02-26T08:39:17.616.fits] - Load  header in the extension[0]
+18:00:51 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/propagate_keys_correct/2026-11-18T18:00:51.148/ADP.2024-02-26T08:39:17.616.fits] - Check data   in the extension[0] : KEYWORD[NAXIS] = 0
+18:00:51 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/propagate_keys_correct/2026-11-18T18:00:51.148/ADP.2024-02-26T08:39:17.616.fits] - Load  header in the extension[1]
+18:00:51 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/propagate_keys_correct/2026-11-18T18:00:51.148/ADP.2024-02-26T08:39:17.616.fits] - Check data   in the extension[1] : KEYWORD[NAXIS] = 2
+18:00:51 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/propagate_keys_correct/2026-11-18T18:00:51.148/ADP.2024-02-26T08:39:17.616.fits] - Check           in the extension[1]: KEYWORD[XTENSION] = BINTABLE
+18:00:51 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/propagate_keys_correct/2026-11-18T18:00:51.148/ADP.2024-02-26T08:39:17.616.fits] - Found format = BINTABLE!
+18:00:51 [ INFO  ] molecfit_fits_load_verbose: [tid=000] File[/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/propagate_keys_correct/2026-11-18T18:00:51.148/ADP.2024-02-26T08:39:17.616.fits] - Loading FITS header/data ... (all extensions)
+18:00:51 [ INFO  ] molecfit_fits_load_verbose: [tid=000] Loaded cpl_propertylist file: /home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/propagate_keys_correct/2026-11-18T18:00:51.148/ADP.2024-02-26T08:39:17.616.fits (extension=0) --> [HEADER   ]
+18:00:51 [ INFO  ] molecfit_fits_load_verbose: [tid=000] Loaded cpl_propertylist file: /home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/propagate_keys_correct/2026-11-18T18:00:51.148/ADP.2024-02-26T08:39:17.616.fits (extension=1) --> [HEADER   ]
+18:00:51 [ INFO  ] molecfit_fits_load_verbose: [tid=000] Loaded cpl_table        file: /home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/propagate_keys_correct/2026-11-18T18:00:51.148/ADP.2024-02-26T08:39:17.616.fits (extension=1) --> [BINTABLE ]
+18:00:51 [ INFO  ] molecfit_data_convert_to_table: [tid=000] File[/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/propagate_keys_correct/2026-11-18T18:00:51.148/ADP.2024-02-26T08:39:17.616.fits], ext[1] - Extract cpl_table from cpl_table (chip=1)
+18:00:51 [ INFO  ] molecfit_data_extract_spectrum_from_cpl_table: [tid=000] BINTABLE with array format --> Convert to columns for Molecfit format : only columns[WAVE, FLUX, ERR, NULL]
+18:00:51 [ INFO  ] molecfit_data_extract_spectrum_from_cpl_table: [tid=000] original      cpl_table structure : Before convert array to table
+18:00:51 [ INFO  ] molecfit_data_extract_spectrum_from_cpl_table: [tid=000] spectrum_table cpl_table structure : After convert array to table
+18:00:51 [ INFO  ] molecfit_data_convert_to_table: [tid=000] DATA for molecfit :  Number of extensions with data = 1
+18:00:51 [ INFO  ] molecfit_data_convert_to_table: [tid=000] DATA for molecfit :  Show spectrum cpl_table structure extension[1]
+18:00:51 [ INFO  ] molecfit_correct: [tid=000] creating dummy extensions 0
+18:00:51 [ INFO  ] molecfit_correct: [tid=000] creating dummy extensions 1
+18:00:51 [ INFO  ] molecfit_correct: [tid=000] loaded mapping correct   1
+18:00:51 [ INFO  ] molecfit_correct: [tid=000] Create input molecfit cpl_table data : SCIENCE [/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/propagate_keys_correct/2026-11-18T18:00:51.148/ADP.2024-02-26T08:39:17.616.fits], ext=1
+18:00:51 [ INFO  ] molecfit_correct: [tid=000] File : /home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/propagate_keys_correct/2026-11-18T18:00:51.148/ADP.2024-02-26T08:39:17.616.fits, ext=1 : Apply correction
+18:00:51 [ INFO  ] molecfit_correct: [tid=000] correcting back to wavelength frame 
+18:00:51 [ INFO  ] molecfit_data_update_table: [tid=000] Update input array DATA (BINTABLE) cpl_table (ext = 1, n_rows = 24750)
+18:00:51 [ INFO  ] molecfit_data_update_table: [tid=000] SET TO DBL err=0
+18:00:51 [ INFO  ] molecfit_correct: [tid=000] Writing on disk [/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/propagate_keys_correct/2026-11-18T18:00:51.148/ADP.2024-02-26T08:39:17.616.fits] SCIENCE input FITS corrected on the same format --> SCIENCE_TELLURIC_CORR_ADP.2024-02-26T08:39:17.616.fits (PRO.CATG=SCIENCE_TELLURIC_CORR)
+18:00:51 [ INFO  ] molecfit_fits_write: [tid=000] Write output cpl_propertylist in primary extension --> 'cpl_propertylist *' with cpl_dfs_save_propertylist(...) function in file : SCIENCE_TELLURIC_CORR_ADP.2024-02-26T08:39:17.616.fits
+18:00:51 [ INFO  ] cpl_dfs_product_save: [tid=000] Writing FITS propertylist product(SCIENCE_TELLURIC_CORR): SCIENCE_TELLURIC_CORR_ADP.2024-02-26T08:39:17.616.fits
+18:00:51 [ INFO  ] molecfit_fits_write: [tid=000] Write output cpl_table     in extension[1]  --> 'cpl_table *' with cpl_dfs_save_table(...) function in file : SCIENCE_TELLURIC_CORR_ADP.2024-02-26T08:39:17.616.fits
+18:00:51 [ INFO  ] molecfit_correct: [tid=000] Recipe successfully!
+18:00:51 [ INFO  ] : [tid=000] Calculating product checksums
+18:00:51 [ INFO  ] : [tid=000] Created product /home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/molecfit_correct_1/2026-11-18T18:00:51.823/SCIENCE_TELLURIC_CORR_ADP.2024-02-26T08:39:17.616.fits
+18:00:51 [ INFO  ] : [tid=000] 1 product created
+18:00:51 [ INFO  ] : [tid=000] Recipe operation(s) took          0.123 seconds to complete.
+18:00:51 [ INFO  ] : [tid=000] Size of single raw input frame  =     1.39 MB
+
+18:00:51 [ INFO  ] : [tid=000] => processing rate of    11.30 MB/sec 
+

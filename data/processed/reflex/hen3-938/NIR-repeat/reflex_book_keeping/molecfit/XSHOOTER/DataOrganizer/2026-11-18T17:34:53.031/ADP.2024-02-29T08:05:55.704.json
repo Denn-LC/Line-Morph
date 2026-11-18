@@ -1,0 +1,108 @@
+{
+  "rawFiles": [
+    {
+      "purposes": ["SCIENCE"],
+      "name": "/home/denn/Dev/Code/Projects/Line-Morph/data/spectra/hen3-938/NIR/ADP.2024-02-29T08:05:55.704.fits",
+      "checksum": "2C5B280AA85947A88D89558AE47CEB07",
+      "category": "SCIENCE",
+      "class": "org.eso.domain.FitsFile"
+    },
+    {
+      "purposes": ["SCIENCE"],
+      "name": "/home/denn/Software/ESO/reinstall/install/calib/molecfit-4.4.4/XSHOOTER_NIR_molecules.fits",
+      "checksum": "62F84EFBB942B3DDC4B740CD9455FA09",
+      "category": "MOLECULES",
+      "class": "org.eso.domain.FitsFile"
+    },
+    {
+      "purposes": ["SCIENCE"],
+      "name": "/home/denn/Software/ESO/reinstall/install/calib/molecfit-4.4.4/auto_molecules-XSHOOTER-0.98000-0050.fits",
+      "checksum": "D9CE49EC3CB55CF89BEDF606F6A43EEE",
+      "category": "AUTO_MOLECULES",
+      "class": "org.eso.domain.FitsFile"
+    },
+    {
+      "purposes": ["SCIENCE"],
+      "name": "/home/denn/Software/ESO/reinstall/install/calib/molecfit-4.4.4/molecule_atlas_UVB-MIR_XSHOOTER_fixed-wlstep.fits",
+      "checksum": "46E431D9193CA5A710EEE520E3484927",
+      "category": "MOLECULE_ATLAS",
+      "class": "org.eso.domain.FitsFile"
+    },
+    {
+      "purposes": ["SCIENCE"],
+      "name": "/home/denn/Software/ESO/reinstall/install/calib/molecfit-4.4.4/XSHOOTER_NIR_range_wl_inc.fits",
+      "checksum": "BD33AFA1E085CE091484F4583F94D496",
+      "category": "WAVE_INCLUDE",
+      "class": "org.eso.domain.FitsFile"
+    },
+    {
+      "purposes": ["SCIENCE"],
+      "name": "/home/denn/Software/ESO/reinstall/install/calib/molecfit-4.4.4/XSHOOTER_NIR_range_pix_exc.fits",
+      "checksum": "DE3EB48C6C453771557F8EB4E65D1D19",
+      "category": "PIXEL_EXCLUDE",
+      "class": "org.eso.domain.FitsFile"
+    },
+    {
+      "purposes": ["SCIENCE"],
+      "name": "/home/denn/Software/ESO/reinstall/install/calib/molecfit-4.4.4/XSHOOTER_NIR_mapping_atmospheric.fits",
+      "checksum": "EAF87852A4762CB8E3F0E26472F9BC98",
+      "category": "MAPPING_ATMOSPHERIC",
+      "class": "org.eso.domain.FitsFile"
+    },
+    {
+      "purposes": ["SCIENCE"],
+      "name": "/home/denn/Software/ESO/reinstall/install/calib/molecfit-4.4.4/XSHOOTER_NIR_mapping_convolve.fits",
+      "checksum": "C15B69B93FE9D3B8F1F6556853B51C65",
+      "category": "MAPPING_CONVOLVE",
+      "class": "org.eso.domain.FitsFile"
+    },
+    {
+      "purposes": ["SCIENCE"],
+      "name": "/home/denn/Software/ESO/reinstall/install/calib/molecfit-4.4.4/XSHOOTER_NIR_mapping_correct.fits",
+      "checksum": "2D2E3BAB775BEFB53BC252F5C60134BA",
+      "category": "MAPPING_CORRECT",
+      "class": "org.eso.domain.FitsFile"
+    }
+  ],
+  "descriptors": [
+    {
+      "value": "XSHOOTER",
+      "key": "INSTRUME"
+    },
+    {
+      "value": "Hen 3-938",
+      "key": "OBJECT"
+    },
+    {
+      "value": "NIR",
+      "key": "SEQ.ARM"
+    },
+    {
+      "value": "60364.3270635",
+      "key": "MJD-OBS"
+    },
+    {
+      "value": "SLITSPEC",
+      "key": "INS.PATH"
+    },
+    {
+      "value": "0.4x11",
+      "key": "INS.OPTI4.NAME"
+    },
+    {
+      "value": "0.4x11",
+      "key": "INS.OPTI5.NAME"
+    },
+    {
+      "value": "SCI_SLIT_FLUX_IDP_NIR",
+      "key": "PRO.CATG"
+    }
+  ],
+  "auxiliary": true,
+  "name": "SCIENCE",
+  "datasetName": "ADP.2024-02-29T08:05:55.704",
+  "messages": [],
+  "complete": true,
+  "class": "org.eso.domain.Dataset",
+  "actions": []
+}

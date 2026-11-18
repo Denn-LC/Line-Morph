@@ -1,0 +1,14 @@
+[
+  {
+    "name": "\/home\/denn\/Dev\/Code\/Projects\/Line-Morph\/data\/processed\/reflex\/hen3-938\/NIR-repeat\/reflex_tmp_products\/molecfit\/XSHOOTER\/molecfit_calctrans_1\/2026-11-18T17:58:47.342\/LBLRTM_RESULTS.fits",
+    "category": "LBLRTM_RESULTS"
+  },
+  {
+    "name": "\/home\/denn\/Dev\/Code\/Projects\/Line-Morph\/data\/processed\/reflex\/hen3-938\/NIR-repeat\/reflex_tmp_products\/molecfit\/XSHOOTER\/molecfit_calctrans_1\/2026-11-18T17:58:47.342\/TELLURIC_DATA.fits",
+    "category": "TELLURIC_DATA"
+  },
+  {
+    "name": "\/home\/denn\/Dev\/Code\/Projects\/Line-Morph\/data\/processed\/reflex\/hen3-938\/NIR-repeat\/reflex_tmp_products\/molecfit\/XSHOOTER\/molecfit_calctrans_1\/2026-11-18T17:58:47.342\/TELLURIC_CORR.fits",
+    "category": "TELLURIC_CORR"
+  }
+]
