@@ -7,10 +7,10 @@
 __pycache__/
 *.pyc
 
-*.fits
-*.fits.gz
-*.fit
-*.fts
+# *.fits
+# *.fits.gz
+# *.fit
+# *.fts
 
 # python virtual environment
 .venv/
