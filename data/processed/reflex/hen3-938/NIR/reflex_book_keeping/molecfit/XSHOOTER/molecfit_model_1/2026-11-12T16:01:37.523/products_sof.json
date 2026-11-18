@@ -1,0 +1,50 @@
+[
+  {
+    "name": "\/home\/denn\/Dev\/Code\/Projects\/Line-Morph\/data\/processed\/reflex\/hen3-938\/NIR\/reflex_tmp_products\/molecfit\/XSHOOTER\/molecfit_model_1\/2026-11-12T16:01:37.523\/MODEL_MOLECULES.fits",
+    "category": "MODEL_MOLECULES"
+  },
+  {
+    "name": "\/home\/denn\/Dev\/Code\/Projects\/Line-Morph\/data\/processed\/reflex\/hen3-938\/NIR\/reflex_tmp_products\/molecfit\/XSHOOTER\/molecfit_model_1\/2026-11-12T16:01:37.523\/WAVE_INCLUDE.fits",
+    "category": "WAVE_INCLUDE"
+  },
+  {
+    "name": "\/home\/denn\/Dev\/Code\/Projects\/Line-Morph\/data\/processed\/reflex\/hen3-938\/NIR\/reflex_tmp_products\/molecfit\/XSHOOTER\/molecfit_model_1\/2026-11-12T16:01:37.523\/PIXEL_EXCLUDE.fits",
+    "category": "PIXEL_EXCLUDE"
+  },
+  {
+    "name": "\/home\/denn\/Dev\/Code\/Projects\/Line-Morph\/data\/processed\/reflex\/hen3-938\/NIR\/reflex_tmp_products\/molecfit\/XSHOOTER\/molecfit_model_1\/2026-11-12T16:01:37.523\/ATM_PARAMETERS.fits",
+    "category": "ATM_PARAMETERS"
+  },
+  {
+    "name": "\/home\/denn\/Dev\/Code\/Projects\/Line-Morph\/data\/processed\/reflex\/hen3-938\/NIR\/reflex_tmp_products\/molecfit\/XSHOOTER\/molecfit_model_1\/2026-11-12T16:01:37.523\/BEST_FIT_PARAMETERS.fits",
+    "category": "BEST_FIT_PARAMETERS"
+  },
+  {
+    "name": "\/home\/denn\/Dev\/Code\/Projects\/Line-Morph\/data\/processed\/reflex\/hen3-938\/NIR\/reflex_tmp_products\/molecfit\/XSHOOTER\/molecfit_model_1\/2026-11-12T16:01:37.523\/BEST_FIT_MODEL.fits",
+    "category": "BEST_FIT_MODEL"
+  },
+  {
+    "name": "\/home\/denn\/Dev\/Code\/Projects\/Line-Morph\/data\/processed\/reflex\/hen3-938\/NIR\/reflex_tmp_products\/molecfit\/XSHOOTER\/molecfit_model_1\/2026-11-12T16:01:37.523\/MOLECFIT_DATA.fits",
+    "category": "MOLECFIT_DATA"
+  },
+  {
+    "name": "\/home\/denn\/Dev\/Code\/Projects\/Line-Morph\/data\/processed\/reflex\/hen3-938\/NIR\/reflex_tmp_products\/molecfit\/XSHOOTER\/molecfit_model_1\/2026-11-12T16:01:37.523\/GDAS.fits",
+    "category": "GDAS"
+  },
+  {
+    "name": "\/home\/denn\/Dev\/Code\/Projects\/Line-Morph\/data\/processed\/reflex\/hen3-938\/NIR\/reflex_tmp_products\/molecfit\/XSHOOTER\/molecfit_model_1\/2026-11-12T16:01:37.523\/GDAS_BEFORE.fits",
+    "category": "GDAS_BEFORE"
+  },
+  {
+    "name": "\/home\/denn\/Dev\/Code\/Projects\/Line-Morph\/data\/processed\/reflex\/hen3-938\/NIR\/reflex_tmp_products\/molecfit\/XSHOOTER\/molecfit_model_1\/2026-11-12T16:01:37.523\/GDAS_AFTER.fits",
+    "category": "GDAS_AFTER"
+  },
+  {
+    "name": "\/home\/denn\/Dev\/Code\/Projects\/Line-Morph\/data\/processed\/reflex\/hen3-938\/NIR\/reflex_tmp_products\/molecfit\/XSHOOTER\/molecfit_model_1\/2026-11-12T16:01:37.523\/ATM_PROFILE_STANDARD.fits",
+    "category": "ATM_PROFILE_STANDARD"
+  },
+  {
+    "name": "\/home\/denn\/Dev\/Code\/Projects\/Line-Morph\/data\/processed\/reflex\/hen3-938\/NIR\/reflex_tmp_products\/molecfit\/XSHOOTER\/molecfit_model_1\/2026-11-12T16:01:37.523\/ATM_PROFILE_COMBINED.fits",
+    "category": "ATM_PROFILE_COMBINED"
+  }
+]

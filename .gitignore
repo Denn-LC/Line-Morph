@@ -1,7 +1,7 @@
 # huge spectral data
-
-data/raw/
-data/processed/
+# keep temp 
+!data/raw/
+!data/processed/
 
 # python cache files
 __pycache__/

@@ -1,0 +1,44 @@
+[
+  {
+    "purposes": ["SCIENCE"],
+    "name": "/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR/reflex_tmp_products/molecfit/XSHOOTER/molecfit_model_1/2026-11-12T16:01:37.523/ATM_PARAMETERS.fits",
+    "checksum": "1422551F17EB4A90E67FA9A13FB135FE",
+    "category": "ATM_PARAMETERS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": ["SCIENCE"],
+    "name": "/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR/reflex_tmp_products/molecfit/XSHOOTER/molecfit_model_1/2026-11-12T16:01:37.523/BEST_FIT_PARAMETERS.fits",
+    "checksum": "SnALSl3LSlALSl3L",
+    "category": "BEST_FIT_PARAMETERS",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": ["SCIENCE"],
+    "name": "/home/denn/Software/ESO/reinstall/install/calib/molecfit-4.4.4/XSHOOTER_NIR_mapping_atmospheric.fits",
+    "checksum": "EAF87852A4762CB8E3F0E26472F9BC98",
+    "category": "MAPPING_ATMOSPHERIC",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": ["SCIENCE"],
+    "name": "/home/denn/Software/ESO/reinstall/install/calib/molecfit-4.4.4/XSHOOTER_NIR_mapping_convolve.fits",
+    "checksum": "C15B69B93FE9D3B8F1F6556853B51C65",
+    "category": "MAPPING_CONVOLVE",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": ["SCIENCE"],
+    "name": "/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR/reflex_tmp_products/molecfit/XSHOOTER/molecfit_model_1/2026-11-12T16:01:37.523/MODEL_MOLECULES.fits",
+    "checksum": "8B9E0BFD1FF14B58F0F7A31F48FC03BB",
+    "category": "MODEL_MOLECULES",
+    "class": "org.eso.domain.FitsFile"
+  },
+  {
+    "purposes": ["SCIENCE"],
+    "name": "/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR/reflex_tmp_products/molecfit/XSHOOTER/propagate_keys_calctrans/2026-11-12T16:54:10.974/ADP.2024-02-29T08:05:55.704.fits",
+    "checksum": "nTS8nQR7nQR7nQR7",
+    "category": "SCIENCE",
+    "class": "org.eso.domain.FitsFile"
+  }
+]

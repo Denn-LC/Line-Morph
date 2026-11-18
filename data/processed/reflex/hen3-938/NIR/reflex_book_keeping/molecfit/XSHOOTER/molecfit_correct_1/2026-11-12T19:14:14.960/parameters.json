@@ -1,0 +1,72 @@
+[
+  {
+    "valtype": "bool",
+    "partype": "value",
+    "name": "CHIP_EXTENSIONS",
+    "recipe": "molecfit_correct",
+    "description": "Flag that determines if image extensions are to be treated as independent\n science data to be fitted for independently or as CHIP specific subranges \n of a single observation to be fitted for as a single combined spectrum.\n Value = TRUE implies to treat as CHIPS to be combined. Value = FALSE implies\n to treat as independent. [FALSE]\n",
+    "display_name": "CHIP_EXTENSIONS",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": false
+  },
+  {
+    "valtype": "string",
+    "partype": "value",
+    "name": "MAPPING_CORRECT",
+    "recipe": "molecfit_correct",
+    "description": "Mapping 'SCIENCE' - 'TELLURIC_CORR' [string with ext_number comma separated (int)] :\n If set to NULL, check if the TAG[MAPPING_CORRECT] FITS BINTABLE value is provided.\n The FITS BINTABLE have to one column [TELLURIC_CORR_EXT]",
+    "display_name": "MAPPING_CORRECT",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": "0,1"
+  },
+  {
+    "valtype": "bool",
+    "partype": "value",
+    "name": "SUPPRESS_EXTENSION",
+    "recipe": "molecfit_correct",
+    "description": "Suppress arbitrary filename extension : TRUE (apply) or FALSE (don't apply)",
+    "display_name": "SUPPRESS_EXTENSION",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": false
+  },
+  {
+    "valtype": "int",
+    "partype": "value",
+    "name": "USE_DATA_EXTENSION_AS_DFLUX",
+    "recipe": "molecfit_correct",
+    "description": "Only valid if USE_ONLY_INPUT_PRIMARY_DATA=TRUE. The fits extension index that contains the\n errors of the science flux data (DFLUX). A value of 0 implies that there is no DFLUX",
+    "display_name": "USE_DATA_EXTENSION_AS_DFLUX",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": 0
+  },
+  {
+    "valtype": "int",
+    "partype": "value",
+    "name": "USE_DATA_EXTENSION_AS_MASK",
+    "recipe": "molecfit_correct",
+    "description": "Only valid if USE_ONLY_INPUT_PRIMARY_DATA=TRUE. The fits extension index that contains the\n mask associated with the science flux data. A value of 0 implies that there is no mask data.",
+    "display_name": "USE_DATA_EXTENSION_AS_MASK",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": 0
+  },
+  {
+    "valtype": "bool",
+    "partype": "value",
+    "name": "USE_ONLY_INPUT_PRIMARY_DATA",
+    "recipe": "molecfit_correct",
+    "description": "Value=TRUE implies that only the fits primary contains the input science flux data.\n Value=FALSE implies that the fits extensions also contains input science flux data.",
+    "display_name": "USE_ONLY_INPUT_PRIMARY_DATA",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": false
+  },
+  {
+    "valtype": "string",
+    "partype": "value",
+    "name": "WLC_REF",
+    "recipe": "molecfit_correct",
+    "description": "Indicates that the reference for the wavelength calibration :\n - If it is set to 'DATA',  is the input  data.\n - If it is set to 'MODEL', is the output model.\n",
+    "display_name": "WLC_REF",
+    "class": "org.eso.domain.RecipeParameter",
+    "value": "DATA"
+  }
+]
