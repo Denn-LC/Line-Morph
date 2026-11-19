@@ -13,12 +13,12 @@ from ccdproc import CCDData
 def show_fits(path, title = None, cmap = "gray"):
     path = Path(path)
     image = CCDData.read(path, unit = "adu")
-    low, high = ZScaleInterval().get_limits(image.data)
+    low, high = 108, 500
 
     fig, ax = plt.subplots()
     pixels = ax.imshow(
         image.data, cmap = cmap, origin = "lower", vmin = low, vmax = high
     )
     ax.set_title(title or path.stem)
-    fig.colorbar(pixels, ax=ax, label="ADU")
+    fig.colorbar(pixels, ax = ax, label = "ADU")
     plt.show()
