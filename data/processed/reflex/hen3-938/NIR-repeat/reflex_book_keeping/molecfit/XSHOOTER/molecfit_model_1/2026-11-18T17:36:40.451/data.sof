@@ -1,4 +1,0 @@
-/home/denn/Software/ESO/reinstall/install/calib/molecfit-4.4.4/XSHOOTER_NIR_molecules.fits MOLECULES
-/home/denn/Software/ESO/reinstall/install/calib/molecfit-4.4.4/XSHOOTER_NIR_range_pix_exc.fits PIXEL_EXCLUDE
-/home/denn/Dev/Code/Projects/Line-Morph/data/processed/reflex/hen3-938/NIR-repeat/reflex_tmp_products/molecfit/XSHOOTER/NormalizeSpectrum/2026-11-18T17:35:29.436/ADP.2024-02-26T08:39:17.616_rescaled.fits SCIENCE
-/home/denn/Software/ESO/reinstall/install/calib/molecfit-4.4.4/XSHOOTER_NIR_range_wl_inc.fits WAVE_INCLUDE

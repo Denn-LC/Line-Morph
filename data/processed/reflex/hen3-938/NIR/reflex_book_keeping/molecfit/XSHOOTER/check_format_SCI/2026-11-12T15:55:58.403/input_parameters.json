@@ -1,1 +1,0 @@
-{"fits_viewer":"fv","in_sof":{"datasetName":"ADP.2024-02-29T08:05:55.704","files":[{"purposes":["SCIENCE"],"name":"/home/denn/Dev/Code/Projects/Line-Morph/data/spectra/hen3-938/NIR/ADP.2024-02-29T08:05:55.704.fits","checksum":"2C5B280AA85947A88D89558AE47CEB07","category":"SCIENCE","class":"org.eso.domain.FitsFile"}],"class":"org.eso.domain.SetOfFiles"}}
