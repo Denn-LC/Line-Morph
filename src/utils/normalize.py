@@ -1,8 +1,10 @@
-from dataclasses import dataclass
-from astropy.io import fits
+import sqlite3
 import matplotlib.pyplot as plt
 import numpy as np
 
+from dataclasses import dataclass
+from astropy.io import fits
+from contextlib import closing
 
 @dataclass
 class NormalizedSpectrum:
@@ -85,6 +87,59 @@ def normalize(
         converged = converged,
     )
 
+import sqlite3
+from contextlib import closing
+
+
+def save_normalized_spectrum(spectrum, star_id, product_id, corrected_path):
+    with closing(sqlite3.connect("data/line_morph.sqlite")) as db, db:
+        db.executescript("""
+            PRAGMA foreign_keys = ON;
+
+            CREATE TABLE IF NOT EXISTS observations (
+                product_id TEXT PRIMARY KEY,
+                star_id TEXT NOT NULL,
+                corrected_path TEXT NOT NULL,
+                converged INTEGER NOT NULL
+            );
+
+            CREATE TABLE IF NOT EXISTS profile_pixels (
+                product_id TEXT NOT NULL REFERENCES observations(product_id),
+                pixel_index INTEGER NOT NULL,
+                wavelength_nm REAL NOT NULL,
+                corrected_flux REAL,
+                continuum REAL NOT NULL,
+                normalized_flux REAL,
+                used_in_fit INTEGER NOT NULL,
+                PRIMARY KEY (product_id, pixel_index)
+            );
+        """)
+
+        db.execute("""
+            INSERT INTO observations VALUES (?, ?, ?, ?)
+            ON CONFLICT(product_id) DO UPDATE SET
+                star_id = excluded.star_id,
+                corrected_path = excluded.corrected_path,
+                converged = excluded.converged
+        """, (product_id, star_id, str(corrected_path), int(spectrum.converged)))
+
+        pixels = zip(
+            spectrum.wavelength,
+            spectrum.flux,
+            spectrum.continuum,
+            spectrum.normalized_flux,
+            spectrum.fit_pixels,
+            strict = True,
+        )
+
+        db.execute("DELETE FROM profile_pixels WHERE product_id = ?", (product_id,))
+        db.executemany(
+            "INSERT INTO profile_pixels VALUES (?, ?, ?, ?, ?, ?, ?)",
+            (
+                (product_id, i, wave, flux, continuum, normalized, int(used))
+                for i, (wave, flux, continuum, normalized, used) in enumerate(pixels)
+            ),
+        )
 
 def plot_normalization(spectrum, title = "He I 1083 nm"):
     wave = spectrum.wavelength

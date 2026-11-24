@@ -1,11 +1,8 @@
-import matplotlib.pyplot as plt
+from utils.normalize import normalize, save_normalized_spectrum
 
-from utils.normalize import normalize, plot_normalization
+star_id = "hen3-938"
+product_id = "ADP.2024-02-29T08:05:55.704"
+corrected_path = f"data/processed/{star_id}/{product_id}_corrected.fits"
 
-spectrum = normalize(
-    "data/processed/hen3-938/ADP.2024-02-29T08:05:55.704_corrected.fits"
-)
-
-fig = plot_normalization(spectrum, title = "Hen 3-938 · He I 1083 nm")
-fig.savefig("figures/spectra/hen3-938/NIR/hen3-938_nir_hei_1083_normalized.png")
-plt.show()
+spectrum = normalize(corrected_path)
+save_normalized_spectrum(spectrum, star_id, product_id, corrected_path)
