@@ -3,6 +3,8 @@
 !data/raw/
 !data/processed/
 
+/data/line_morph.sqlite
+
 # keep temp
 # *.fits
 # *.fits.gz

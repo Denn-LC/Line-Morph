@@ -87,9 +87,6 @@ def normalize(
         converged = converged,
     )
 
-import sqlite3
-from contextlib import closing
-
 
 def save_normalized_spectrum(spectrum, star_id, product_id, corrected_path):
     with closing(sqlite3.connect("data/line_morph.sqlite")) as db, db:
