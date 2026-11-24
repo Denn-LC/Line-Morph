@@ -7,5 +7,5 @@ spectrum = normalize(
 )
 
 fig = plot_normalization(spectrum, title = "Hen 3-938 · He I 1083 nm")
-fig.savefig("figures/hei_1083_normalized.png")
+fig.savefig("figures/spectra/hen3-938/NIR/hen3-938_nir_hei_1083_normalized.png")
 plt.show()
